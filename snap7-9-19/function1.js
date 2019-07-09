@@ -2,16 +2,11 @@
  Function #1
  Take two numbers as arguments and return a new value after a mathematical operation (addition, subtraction, multiplication, etc.)
  Which operation is your choice.**/
-function multiplyBy()
-{
-	num1 = document.getElementById("firstNumber").value;
-	num2 = document.getElementById("secondNumber").value;
-	document.getElementById("result").innerHTML = num1 * num2;
-}
 
-function divideBy()
+function multiplyBy(num1,num2,num3)
 {
-	num1 = document.getElementById("firstNumber").value;
-	num2 = document.getElementById("secondNumber").value;
-	document.getElementById("result").innerHTML = num1 / num2;
+	int=num1;
+	int=num2;
+	int=num3;
+	num3 = num1 * num2;
 }
