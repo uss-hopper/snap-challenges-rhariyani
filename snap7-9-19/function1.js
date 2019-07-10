@@ -3,10 +3,12 @@
  Take two numbers as arguments and return a new value after a mathematical operation (addition, subtraction, multiplication, etc.)
  Which operation is your choice.**/
 
-function multiplyBy(num1,num2,num3)
+function Multiplyby(num1,num2)
 {
-	int=num1;
-	int=num2;
-	int=num3;
-	num3 = num1 * num2;
+	let result=num1*num2;
+	return (result)
 }
+
+console.log(Multiplyby(5,8),"Multiplication");
+console.log(Multiplyby(10,8),"Multiplication");
+
