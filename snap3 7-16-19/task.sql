@@ -16,14 +16,10 @@ CREATE TABLE task(
 /**
   2. sql query  for tweet
 
-  1. select * from tweet
-  WHERE profileId= UNHEX("0536faef082b454e9d444cdbe7887d7a");
---------------------------------------------------------------------
-  2.SELECT tweetId, tweetProfileId, tweetContent,
-  tweetDate from tweet WHERE tweetContent LIKE "hello";
-  --------------------------------------------------------
-  3. SELECT tweet.tweetId, tweet.tweetProfileId, tweet.tweetContent, tweet.tweetDate, profile.profileAtHandle FROM `like` INNER JOIN tweet ON tweet.tweetId = like.likeTweetId
-  INNER JOIN profile ON profile.profileId = like.likeProfileId WHERE like.likeTweetId = uuid;
+
+  . SELECT tweet.tweetContent, profile.profileAtHandle
+  FROM tweet INNER JOIN 'like' ON tweet.tweetId = like.likeTweetId
+  INNER JOIN profile ON like.likeProfileId = profile.profileId WHERE tweet.tweetId='';
 
 
 
