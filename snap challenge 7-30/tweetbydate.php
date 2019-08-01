@@ -1,6 +1,7 @@
-public static function gettweetbytweetdate(\PDO $pdo) : \SPLFixedArray {
+public static function gettweetbytweetdate(\PDO $pdo, DateTime $tweetDate) : \SPLFixedArray {
+
 		// create query template
-		$query = "SELECT tweetId FROM tweet WHERE DATE(time) = CURDATE()";
+		$query = "SELECT tweetId, tweetProfileId, tweetContent, tweetDate FROM tweet WHERE DATE(time) = CURDATE()";
 		$statement = $pdo->prepare($query);
 		$statement->execute();
 
