@@ -1,8 +1,8 @@
 //Map this array of text to the DOM.
-let wizards=['Bob', 'Jim', 'Matt', 'Mary', 'Suzy', ' Sarah'];
+var wizards=['Bob', 'Jim', 'Matt', 'Mary', 'Suzy', ' Sarah'];
 
 // 		// Get the app element
-let app = document.querySelector('#app');
+var app = document.querySelector('#app');
 
 // // Create markup
 app.innerHTML = '<ul>' + wizards.map(function (wizard) {
